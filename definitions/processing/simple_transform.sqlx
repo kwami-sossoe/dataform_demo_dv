@@ -1,0 +1,28 @@
+config {
+  type: "table",
+  schema: "dataform_processing",
+  tags: ["weekly", "patents"],
+  bigquery: {},
+  description: "",
+  assertions: {
+    nonNull: ["country"],
+  }
+}
+
+with source_data as (
+select
+    kind_code, country_code country, family_id,
+    publication_date, filing_date, grant_date, priority_date
+from
+    ${ref("source_patent_view")}
+where country_code is not null
+
+)
+select * 
+
+
+from source_data
+
+
+
+
