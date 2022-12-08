@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: "patents-public-data.patents.publications_20220",
+  schema: "sources_patents",
+  description: "",
+  name: "source_patent_declaration"
+}

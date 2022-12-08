@@ -1,0 +1,12 @@
+config {
+  type: "view",
+  database: "itg-data-solutions-fabric-dv",
+  schema: "sources_patents",
+  description: "",
+  tags: ["view", "patent"]
+}
+
+
+select * 
+from `patents-public-data.patents.publications_202204`
+
