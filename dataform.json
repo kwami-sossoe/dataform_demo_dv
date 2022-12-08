@@ -2,7 +2,7 @@
   "defaultSchema": "dataform_processing",
   "assertionSchema": "dataform_processing_assertions",
   "warehouse": "bigquery",
-    "defaultLocation": "US",
+  "defaultLocation": "US",
   "defaultDatabase": "itg-data-solutions-fabric-dv"
 }
     
